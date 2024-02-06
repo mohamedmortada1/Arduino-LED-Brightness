@@ -1,0 +1,14 @@
+int led=3;
+void setup(){
+pinMode(led,OUTPUT);
+}
+void loop(){
+  for(int z=0; z<=255; z=z+5){
+      analogWrite(led,z);
+      delay(20);
+      }
+  for(int z=255; z>=0; z=z-5){
+      analogWrite(led,z);
+      delay(20);
+      }
+}
